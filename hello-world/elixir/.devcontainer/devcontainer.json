@@ -1,0 +1,7 @@
+{
+	"dockerFile": "Dockerfile",
+	"remoteUser": "elixir",
+	"extensions": [
+		"mjmcloug.vscode-elixir"
+	]
+}
