@@ -1,0 +1,13 @@
+{
+    "name": "Java",
+    "dockerFile": "Dockerfile",
+    "postCreateCommand": "java -version",
+    "extensions": [
+		"mathiasfrohlich.kotlin",
+		"naco-siren.gradle-language",
+		"richardwillis.vscode-gradle"
+	],
+    "remoteUser": "vscode",
+    "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/workspace",
+    "workspaceFolder": "/workspace"
+}

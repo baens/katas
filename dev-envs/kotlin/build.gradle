@@ -1,0 +1,19 @@
+plugins {
+    id "application"
+    id "org.jetbrains.kotlin.jvm" version "1.4.0"
+}
+sourceSets {
+    main.kotlin.srcDirs += 'src'
+}
+
+application {
+    mainClass = 'MainKt'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib'
+}
