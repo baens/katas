@@ -1,0 +1,10 @@
+version: '3'
+services:
+    dev:
+        build:
+            context: .devcontainer
+        volumes:
+            - .:/workspace
+        links:
+            - db
+        command: sleep infinity

@@ -1,13 +1,17 @@
 {
     "name": "Java",
-    "dockerFile": "Dockerfile",
-    "postCreateCommand": "java -version",
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "docker-compose.dev.yml"
+    ],
+    "service": "dev",
     "extensions": [
-		"mathiasfrohlich.kotlin",
-		"naco-siren.gradle-language",
-		"richardwillis.vscode-gradle"
-	],
+        "mathiasfrohlich.kotlin",
+        "naco-siren.gradle-language",
+        "richardwillis.vscode-gradle",
+        "fwcd.kotlin",
+        "redhat.java"
+    ],
     "remoteUser": "vscode",
-    "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/workspace",
     "workspaceFolder": "/workspace"
 }

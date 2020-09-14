@@ -1,0 +1,6 @@
+version: '3'
+services:
+    db:
+        image: postgres:12.4
+        environment:
+            POSTGRES_PASSWORD: passwordooo
